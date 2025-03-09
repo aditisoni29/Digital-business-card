@@ -1,0 +1,193 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #b3955c, #e0c68a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Card Styles */
+.card {
+    width: 450px;
+    height: 300px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    border-bottom: 2px solid #b3955c;
+    padding-bottom: 5px;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    display: block;
+}
+
+.title h2 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.title p {
+    font-size: 12px;
+    font-style: italic;
+    color: #777;
+    margin: 0;
+}
+
+/* Profile Info (Enlarged Profile Section) */
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.profile img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #b3955c;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+.info p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Address Section with Map Links */
+.addresses {
+    text-align: left;
+    font-size: 12px;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+}
+
+.address h4 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #222;
+    margin: 0;
+}
+
+.address p {
+    font-size: 12px;
+    color: #555;
+    margin: 2px 0;
+}
+
+.address a {
+    font-size: 12px;
+    color: #b3955c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.address a:hover {
+    text-decoration: underline;
+}
+
+/* Contact (Phone Left, Social Links Right) */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+}
+
+.phone a {
+    text-decoration: none;
+    color: #b3955c;
+}
+
+.phone a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icons a {
+    font-size: 20px; /* Adjust size */
+    text-decoration: none;
+    color: #b3955c;
+    transition: transform 0.2s;
+}
+
+.icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .addresses {
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons {
+        margin-top: 5px;
+    }
+}
